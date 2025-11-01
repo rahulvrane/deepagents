@@ -1,0 +1,46 @@
+# Task definitions for YAML-based crew configuration
+
+research_task:
+  description: |
+    Conduct comprehensive research about {topic} in {year}.
+    Focus on:
+    - Latest developments and innovations
+    - Key players and organizations
+    - Current trends and patterns
+    - Future predictions and challenges
+
+    Provide detailed findings with proper citations and sources.
+  expected_output: |
+    A comprehensive research report with at least 10 key findings,
+    properly cited sources, and clear categorization of information.
+
+analysis_task:
+  description: |
+    Analyze the research findings about {topic} and identify:
+    - Major trends and patterns
+    - Significant insights and implications
+    - Comparative analysis where applicable
+    - Statistical significance of findings
+
+    Provide data-driven insights and recommendations.
+  expected_output: |
+    A detailed analysis report highlighting the 5 most significant trends,
+    with supporting data, insights, and recommendations for stakeholders.
+
+writing_task:
+  description: |
+    Create a professional, comprehensive report about {topic} based on
+    the research and analysis. The report should include:
+    - Executive Summary (200 words)
+    - Introduction
+    - Methodology
+    - Key Findings (from research)
+    - Detailed Analysis (from analysis task)
+    - Conclusions
+    - Recommendations
+    - References
+
+    Format the report in markdown with proper headings, lists, and structure.
+  expected_output: |
+    A complete professional report in markdown format, well-structured
+    with all required sections, ready for stakeholder review.
