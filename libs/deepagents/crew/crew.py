@@ -43,7 +43,7 @@ class Crew:
         ...     process=ProcessType.SEQUENTIAL,
         ...     verbose=True
         ... )
-        >>> result = crew.kickoff(inputs={"topic": "AI"})
+        >>> result = crew.launch(inputs={"topic": "AI"})
     """
 
     def __init__(
@@ -103,7 +103,7 @@ class Crew:
                             f"Task context references task not in crew: {context_task.description}"
                         )
 
-    def kickoff(self, inputs: Optional[Dict[str, Any]] = None) -> CrewOutput:
+    def launch(self, inputs: Optional[Dict[str, Any]] = None) -> CrewOutput:
         """Execute the crew.
 
         Args:

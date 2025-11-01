@@ -62,7 +62,7 @@ crew = Crew(
     verbose=True
 )
 
-result = crew.kickoff(inputs={"topic": "AI Agents"})
+result = crew.launch(inputs={"topic": "AI Agents"})
 ```
 
 **Run it:**
@@ -112,7 +112,7 @@ crew = Crew(
     verbose=True
 )
 
-result = crew.kickoff(inputs={"topic": "AI in Healthcare"})
+result = crew.launch(inputs={"topic": "AI in Healthcare"})
 ```
 
 **Run it:**
@@ -164,7 +164,7 @@ class ResearchCrew(CrewBase):
         return Crew(agents=self.agents, tasks=self.tasks, verbose=True)
 
 crew = ResearchCrew()
-result = crew.crew().kickoff(inputs={"topic": "AI"})
+result = crew.crew().launch(inputs={"topic": "AI"})
 ```
 
 **Requirements:**
@@ -225,7 +225,7 @@ crew = Crew(
     manager_llm="model-name",               # For hierarchical mode
 )
 
-result = crew.kickoff(inputs={"var": "value"})
+result = crew.launch(inputs={"var": "value"})
 ```
 
 ## Process Types
@@ -268,7 +268,7 @@ task = Task(
     output_file="reports/{topic}_{year}.md"
 )
 
-crew.kickoff(inputs={"topic": "AI", "year": "2025"})
+crew.launch(inputs={"topic": "AI", "year": "2025"})
 # Results in: "Research AI in 2025"
 # Saves to: "reports/AI_2025.md"
 ```

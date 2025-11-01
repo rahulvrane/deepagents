@@ -176,7 +176,7 @@ class Crew:
             if not self.manager_llm and not self.manager_agent:
                 raise ValueError("Hierarchical process requires manager_llm or manager_agent")
 
-    def kickoff(self, inputs: Optional[Dict[str, Any]] = None) -> Any:
+    def launch(self, inputs: Optional[Dict[str, Any]] = None) -> Any:
         """Execute the crew."""
         if self.process == ProcessType.SEQUENTIAL:
             return self._execute_sequential(inputs or {})
@@ -459,7 +459,7 @@ crew = Crew(
 )
 
 # Execute
-result = crew.kickoff(inputs={"topic": "AI Agents"})
+result = crew.launch(inputs={"topic": "AI Agents"})
 ```
 
 ### Example 2: YAML-Based Approach
@@ -541,7 +541,7 @@ class ResearchCrew(CrewBase):
 
 # Execute
 research_crew = ResearchCrew()
-result = research_crew.crew().kickoff(inputs={"topic": "AI Agents"})
+result = research_crew.crew().launch(inputs={"topic": "AI Agents"})
 ```
 
 ### Example 3: Hierarchical Process
@@ -596,7 +596,7 @@ crew = Crew(
     verbose=True
 )
 
-result = crew.kickoff(inputs={"industry": "AI"})
+result = crew.launch(inputs={"industry": "AI"})
 ```
 
 ## Memory Integration

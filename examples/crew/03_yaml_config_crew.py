@@ -84,7 +84,7 @@ def main():
         research_crew = ResearchCrew()
 
         # Execute crew
-        result = research_crew.crew().kickoff(inputs={
+        result = research_crew.crew().launch(inputs={
             "topic": "Quantum Computing",
             "year": "2025"
         })

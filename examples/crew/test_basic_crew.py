@@ -38,7 +38,7 @@ def test_basic_crew():
 
     # Execute
     try:
-        result = crew.kickoff()
+        result = crew.launch()
 
         print("\n" + "="*60)
         print("✅ TEST PASSED")
@@ -97,7 +97,7 @@ def test_task_context():
     )
 
     try:
-        result = crew.kickoff()
+        result = crew.launch()
 
         print("\n" + "="*60)
         print("✅ TEST PASSED")

@@ -92,7 +92,7 @@ def main():
 
     # Execute crew
     print("\n🚀 Starting Hierarchical Crew Example\n")
-    result = crew.kickoff(inputs={"topic": "AI in Healthcare"})
+    result = crew.launch(inputs={"topic": "AI in Healthcare"})
 
     print("\n" + "="*60)
     print("📊 FINAL RESULT")

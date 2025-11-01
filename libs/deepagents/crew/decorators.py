@@ -27,7 +27,7 @@ class CrewBase:
         ...         return Crew(agents=self.agents, tasks=self.tasks)
         >>>
         >>> my_crew = MyCrew()
-        >>> result = my_crew.crew().kickoff()
+        >>> result = my_crew.crew().launch()
     """
 
     def __init__(self):

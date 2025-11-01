@@ -71,7 +71,7 @@ def main():
 
     # Execute crew
     print("\n🚀 Starting Simple Crew Example\n")
-    result = crew.kickoff(inputs={"topic": "AI Agents"})
+    result = crew.launch(inputs={"topic": "AI Agents"})
 
     print("\n" + "="*60)
     print("📊 FINAL RESULT")
